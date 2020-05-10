@@ -18,4 +18,4 @@ export TAG=${TAG:='latest'}
 echo Using image name ${IMAGE_NAME}
 
 # we --rm=true because we want to remove the intermediary build image
-docker build -rm=true -t ${IMAGE_NAME}:${TAG} .
+docker build --rm=true -t ${IMAGE_NAME}:${TAG} .
